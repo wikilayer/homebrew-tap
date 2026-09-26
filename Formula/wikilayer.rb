@@ -1,8 +1,10 @@
 class Wikilayer < Formula
   desc "Personal wiki server"
   homepage "https://wikilayer.org"
-  version "1.0.0"
   license "MIT"
+
+  depends_on :macos
+  depends_on "postgresql@16"
 
   on_macos do
     on_arm do
@@ -16,9 +18,6 @@ class Wikilayer < Formula
     end
   end
 
-  depends_on :macos
-  depends_on "postgresql@16"
-
   def install
     bin.install "wikilayer"
     pkgshare.install "LICENSE"
@@ -27,7 +26,7 @@ class Wikilayer < Formula
   service do
     run [opt_bin/"wikilayer", "standalone",
          "-data-dir", var/"wikilayer",
-         "-postgres-bin", Formula["postgresql@16"].opt_bin,
+         "-postgres-bin", formula_opt_bin("postgresql@16"),
          "-addr", "127.0.0.1:8081"]
     keep_alive true
     log_path var/"log/wikilayer.log"
