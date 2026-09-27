@@ -8,13 +8,13 @@ class Wikilayer < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/wikilayer/homebrew-tap/releases/download/v1.0.1/wikilayer_1.0.1_darwin_arm64.tar.gz"
-      sha256 "b857eb80e39a93ed5075659e40c6f8aa5ba1b24f5d79f2e995cb4f4bfedbff4b"
+      url "https://github.com/wikilayer/homebrew-tap/releases/download/v1.1.0/wikilayer_1.1.0_darwin_arm64.tar.gz"
+      sha256 "de74dea85390653222232e4d396c1eb38b44b469bcd01ee1e0bb9140306d65b5"
     end
 
     on_intel do
-      url "https://github.com/wikilayer/homebrew-tap/releases/download/v1.0.1/wikilayer_1.0.1_darwin_amd64.tar.gz"
-      sha256 "415cbb1720cea074829e9d85a1f7c4b26fe70c31c2faa74953d74fc09e3227c6"
+      url "https://github.com/wikilayer/homebrew-tap/releases/download/v1.1.0/wikilayer_1.1.0_darwin_amd64.tar.gz"
+      sha256 "67c8dc5d5539044727d10c8ce5390169266e88c439447aaa7bce99a99f862ce1"
     end
   end
 
@@ -26,8 +26,7 @@ class Wikilayer < Formula
   service do
     run [opt_bin/"wikilayer", "standalone",
          "-data-dir", var/"wikilayer",
-         "-postgres-bin", formula_opt_bin("postgresql@16"),
-         "-addr", "127.0.0.1:8081"]
+         "-postgres-bin", formula_opt_bin("postgresql@16")]
     keep_alive true
     log_path var/"log/wikilayer.log"
     error_log_path var/"log/wikilayer.log"
