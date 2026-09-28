@@ -8,13 +8,13 @@ class Wikilayer < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/wikilayer/homebrew-tap/releases/download/v1.1.1/wikilayer_1.1.1_darwin_arm64.tar.gz"
-      sha256 "ca4e744e4f7591cd6b317ba7e906047b5f6398c4a6b6fd605f256faacaa08426"
+      url "https://github.com/wikilayer/homebrew-tap/releases/download/v1.1.2/wikilayer_1.1.2_darwin_arm64.tar.gz"
+      sha256 "102e8a972e19271623f9c085f24337a69fd10982ea75453d76b2247e4a9a76e6"
     end
 
     on_intel do
-      url "https://github.com/wikilayer/homebrew-tap/releases/download/v1.1.1/wikilayer_1.1.1_darwin_amd64.tar.gz"
-      sha256 "23e950a634244f0fa0595d56b21204252ac24abbdc588b762bb02f97cacc63e7"
+      url "https://github.com/wikilayer/homebrew-tap/releases/download/v1.1.2/wikilayer_1.1.2_darwin_amd64.tar.gz"
+      sha256 "29ffedcd200f8b6105746b34d63d71c9a0f24a5ad33198d1f8e59e89522a36db"
     end
   end
 
