@@ -1,8 +1,8 @@
 class Wlget < Formula
   desc "Read Wikilayer pages and account chat from the terminal"
   homepage "https://github.com/wikilayer/wlget"
-  url "https://github.com/wikilayer/wlget/archive/refs/tags/v0.5.0.tar.gz"
-  sha256 "19251c9f3fd6d92494e782b5c1fb69773b98aab8486859bec76f5c7d48c5a7a1"
+  url "https://github.com/wikilayer/wlget/archive/refs/tags/v0.6.0.tar.gz"
+  sha256 "1f02b0de8dd75015f05a0bf0c3e9f359ea2751af95499106ae818da61d7aeba4"
   license "MIT"
 
   depends_on "go" => :build
